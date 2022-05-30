@@ -1,0 +1,28 @@
+/**
+Main styles of the website
+**/
+
+
+
+body{
+	background-color: #228B22;
+	font-family: Georgia, 'Times New Roman', Times;
+	margin: 15px;
+}
+
+.nav{
+	display: flex;
+	flex-direction: column;
+	flex-basis: 20px;
+}
+.nav .nav-title{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+}
+.nav .nav-links{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+}

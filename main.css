@@ -1,9 +1,6 @@
 /**
 Main styles of the website
 **/
-
-
-
 body{
 	background-color: #228B22;
 	font-family: Georgia, 'Times New Roman', Times;
@@ -47,35 +44,42 @@ hr.heading{
 }
 .main-welcome{
 	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	flex-basis: 50%;
-	margin-top: 20px;
-	height: 300px;
+	flex-direction: column;
+	height: 400px;
 }
 .main-welcome .welcome-message{
 	text-shadow: capitalize;
-	padding-right: 10px;
-	border: 2px solid #ffffff;
-	border-radius: 5px;
 	color: black;
+  	justify-content: center;
+ 	align-items: center;
+ 	display: flex;
+ 	position: absolute;
+	top: 1px;
+ 	left: 20%;
+ 	right: 20%;
+ 	bottom: 100px;
+ 	line-height: 20px;
 }
 .welcome-img img{
-	margin-left: 10px;
 	border: 1px solid #ffffff;
-	width: auto;
-	height: auto;
+	width: 100%;
 	overflow: hidden;
+	height: 300px;
+	opacity: 0.5;
+	position: relative;
 }
-.block-header{
-	color: #ffffff;
+.block-header h4{
+	color: white;
 	font-size: 20px;
 	text-decoration: underline;
 	text-align: center;
 }
 .main-students{
 	display: flex;
-	flex-direction: 
+	flex-direction: row;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .main-student .student-section{
 	padding-left: 10px;
@@ -84,13 +88,20 @@ hr.heading{
 }
 .student-section{
 	position: relative;
+
+}
+.student-section img{
+	height: 200px;
+	border-radius: 20px;
+	border: 1px solid red;
+	width: 200px;
 }
 .stu{
 	position: absolute;
 	text-align: center;
 	top: 30px;
     width: 100%;
-    color: red;
+    color: black;
 }
 .footer{
 	display: flex;

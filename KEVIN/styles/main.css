@@ -3,7 +3,7 @@
 Main styles of the website
 **/
 body{
-	background-color: #228B22;
+	background-color: teal;
 	font-family: Georgia, 'Times New Roman', Times;
 	margin: 15px;
 }
@@ -21,6 +21,8 @@ body{
 }
 .nav .nav-links{
 	display: flex;
+	margin-bottom: 10px;
+	margin-top: 10px;
 	flex-direction: row;
 	justify-content: flex-end;
 }
@@ -48,9 +50,16 @@ hr.heading{
 	flex-direction: column;
 	height: 400px;
 }
+.welcome-message h4{
+	text-transform: capitalize;
+	text-decoration: underline;
+	color: black;
+	text-transform: uppercase;
+}
 .main-welcome .welcome-message{
 	text-shadow: capitalize;
 	color: black;
+	flex-direction:column; 
   	justify-content: center;
  	align-items: center;
  	display: flex;
@@ -85,7 +94,6 @@ hr.heading{
 .main-student .student-section{
 	padding-left: 10px;
 	height: 200px;
-
 }
 .student-section{
 	position: relative;
@@ -167,10 +175,6 @@ hr.heading{
 	text-transform: uppercase;
 	text-decoration: underline;
 }
-.contact-form{
-	margin-left: auto;
-	margin-right: auto;
-}
 .contact-form form{
 	display: flex;
 	flex-direction: column; 
@@ -181,4 +185,115 @@ hr.heading{
 form .form-group{
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 10px;
 }
+form .form-group label{
+	color: white;
+	font-weight: lighter;
+}
+form .form-group input,textarea,select{
+	min-height: 20px;
+	border: 1px solid #ffffff;
+	border-radius: 2px;
+}
+form .form-group textarea{
+	height: 50px;
+}
+
+form .form-group button{
+	height: auto;
+	background-color: black;
+	color: #ffffff;
+	font-size: 20px;
+	border-style: none;
+	border-radius: 5px;
+}
+form .form-group input:focus{
+	min-height: 20px;
+	border: 1px gray #ffffff;
+}
+
+
+
+/*
+Media Queries
+*/
+
+@media screen 
+and (max-width: 980px) 
+and (min-width: 980px){
+	.nav .nav-links{
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	justify-content: flex-end;
+	align-items: flex-end;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+	.nav-links a{
+	font-size: 20px;
+	padding-left: : 20px;
+	color: #0000FF;
+	text-decoration: underline;
+	margin-bottom: 20px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+	.welcome-img img{
+	border: 1px solid #ffffff;
+	width: 100%;
+	overflow: hidden;
+	height: 350px;
+	opacity: 0.5;
+	position: relative;
+}
+	.welcome-message h4
+	{
+		display: none;
+	}
+	.main-welcome .welcome-message
+	{
+ 		position: absolute;
+  		top: 70%;
+  		left: 20%;
+ 		right: 20%;
+ 		bottom: 70%;
+  		line-height: 20px;
+  	}
+  	.main-students{
+  		display: flex;
+  		flex-direction: column;
+  		width: 100%;
+  		align-items: center;
+  	}
+  	.main-students .student-section{
+  		margin-bottom: 20px;
+  	}
+  	.student-section img{
+  		width: auto;
+  	}
+  	footer{
+  		display: flex;
+  		flex-direction: column;
+  	}	
+ 	.footer div{
+  		margin-bottom: 10px;
+  		width: 80%;
+  	  	padding-left: 0;
+   		margin-left: 0;
+   		margin-right: 0;
+   		border-style: none;
+  	}
+  	.footer-right ul li a{
+  		color: white;
+  		text-decoration: underline;
+  		text-transform: uppercase;
+  	}
+  	.footer-right ul li{
+  		border-bottom: none;
+  	}
+
+}
+
+

@@ -1,3 +1,4 @@
+
 /**
 Main styles of the website
 **/
@@ -149,7 +150,35 @@ hr.heading{
 	width: 70%
 }
 .footer-right ul li a{
-	padding-top: :15px;
+	padding-top: :20px;
 	color: #0000FF;
 	text-decoration: none; 
+	padding-right: 50px;
+}
+.contact{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.contact .heading{
+	text-align: center;
+	color: #ffffff;
+	font-size: 30px;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+.contact-form{
+	margin-left: auto;
+	margin-right: auto;
+}
+.contact-form form{
+	display: flex;
+	flex-direction: column; 
+	flex-wrap: wrap;
+	border: 1px solid #ffffff;
+	padding: 20px;
+}
+form .form-group{
+	display: flex;
+	flex-direction: column;
 }

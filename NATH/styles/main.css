@@ -1,0 +1,308 @@
+/**
+Main styles of the website 
+**/
+
+body{
+  background-color:#8fbc8f;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 15px;
+}
+.nav{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 20px;
+}
+.nav .nav-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+.nav .nav-links {
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-end;
+}
+
+.nav-links a{
+  font-size: 20px;
+  padding-left:20px ;
+  color: #D2691E;
+  text-decoration: none;
+}
+hr.heading{
+  color: #ffffff;
+  width: 100%;
+}
+.nav-links a:hover{
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.main-body{
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+}
+.main-welcome{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  margin-top: 20px;
+  height: 300px;
+}
+.welcome-message h4{
+	color: black;
+	text-transform: capitalize;
+	font-size: 20px;
+    text-decoration: underline;
+}
+.main-welcome .welcome-message{
+  text-transform: capitalize;
+  padding: 10px;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  right: 20%;
+  bottom: 20%;
+}
+.welcome-img img{
+  border: 1px solid #7858A6;
+  height: 500px;
+  overflow: hidden;
+  width: 100%;
+}
+.block-header h4{
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: underline;
+  font-style: italic;
+}
+.main-students{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+.main-students .student-section{
+  padding-left: 10px;
+  height: 200px;
+  border:20px;
+}
+.text{
+	position: absolute;
+	text-align: center;
+	top: 50px;
+	width: 100%
+	color#ffffff;
+}
+.student-section{
+  position: relative;
+}
+.text {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  right: 20%;
+  bottom: 20%;
+  padding: 10px;
+}
+.student-section img{
+  height: 200px;
+  border: 5px solid #ffffff;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #ffffff;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+.footer-left{
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+}
+.footer-left h3{
+  color: #ffffff;
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-family: 'Courier New', Courier, monospace;
+}
+.footer-left p{
+  line-height: 20px;
+  color: #ffffff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+  text-align: justify;
+}
+.footer-right{
+  margin-left: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+.footer-right h3{
+  color: #ffffff;
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+.footer-right ul{
+  list-style-type: none;
+}
+.footer-right ul li{
+  border-bottom: 1px solid #D2691E;
+  width: 100%;
+}
+.footer-right ul li a{
+  margin-bottom: 15px;
+  color: #D2691E;
+  text-decoration: none;
+}
+.contact{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.contact .heading{
+	text-align: center;
+	color: #ffffff;
+	align-items: center;
+	font-size: 20px;
+	text-transform: capitalize;
+	text-decoration: underline;
+    font-family: verdana, geneva,tahoma, sans-serif;
+}
+.contact-form form{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	border:1px solid #ffffff;
+}
+form .form-group{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+form .form-group{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+form .form-group label{
+	color: white;
+	font-weight: lighter;
+}
+form .form-group input,text area,select{
+	min-height: 20px;
+	border:1px solid #ffffff;
+	border-radius: 2px;
+}
+form .form-group textarea{
+	height: 50px;
+}
+form .form-group button{
+	height: auto;
+	background-color: #D2691E;
+	color: #ffffff;
+	font-size: 20px;
+	border-style: none;
+	border-radius: 5px;
+}
+form .form-group input:focus{
+	min-height: 20px;
+	border:1px solid gray #ffffff;
+}
+.welcome-message h4{
+	color: black;
+	text-transform: capitalize;
+	font-size: 20px;
+    text-decoration: underline;
+}
+.checkbox{
+	display: inline-block;
+}
+/**
+Media queries
+**/
+@media screen 
+and (max-width: 414px) 
+and (min-width: 414px){
+	.nav .nav-links{
+ 	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+ 	margin-top: 10px;
+	margin-bottom: 10px;
+	border-bottom: 2px solid #ffffff;
+  }
+  .nav-links a{
+  font-size: 20px;
+  padding-left:20px ;
+  color: #D2691E;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  }
+  .welcome-img img{
+  border: 1px solid #7858A6;
+  height: 500px;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  }
+  .welcome-message h4{
+  	display: none;
+  }
+  .main-welcome .welcome-message{
+  position: absolute;
+  top: 70%;
+  left: 20%;
+  right: 20%;
+  bottom: 70%;
+  line-height: 20px;
+  }
+  .main-students{
+  	display: flex;
+  	flex-direction: column;
+  	width: 100%;
+  	margin-bottom: 20px;
+  }
+   .main-students .student-section{
+   	margin-bottom: 20px;
+   } 
+  .student-section img{
+  	width: 100%;
+  }
+  footer{
+  	display: flex;
+  	flex-direction: column;
+  }
+  .footer div{
+  	margin-bottom: 10px;
+  	width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+    border-style: none;
+  }
+  .footer-right ul li a{
+  	color: #ffffff;
+  	text-decoration: underline;
+  	text-transform: capitalize;
+  }
+  .footer-right ul li a{
+  	border-bottom: none;
+  }
+}

@@ -1,5 +1,5 @@
 body{
-
+font-family: 'Comfortaa',cursive;
 }
 .nav{
 	background-color: #112B3C;
@@ -14,7 +14,7 @@ body{
 }
 .nav-links a{
 	padding-top: 10px;
-	color: white;
+	
 	text-decoration: none;
 	font-size: 15px;
 	padding-left: 20px;

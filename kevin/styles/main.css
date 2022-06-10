@@ -3,10 +3,9 @@ body{
 }
 .nav{
 	background-color: #112B3C;
-	padding-bottom: 50px;
+	padding-bottom: 80px;
 	width: 100%;
 	border: 100%;
-	box-shadow: inset 12px 12px 12px #ffffff;
 }
 .nav .nav-links{
 	display: flex;
@@ -21,23 +20,29 @@ body{
 	padding-left: 20px;
 	color: teal;
 }
+.nav-links p{
+	font-size: 25px;
+	padding-right: 500px;
+	margin: 08px;
+	text-decoration: none;
+	color: white;
+}	
 .nav-links a:hover{
-
-}
-.nav-title{
-	display: inline-block;
+	text-decoration: white;
 }
 .welcome-message{
 	text-align: center;
 }
 .welcome-message p{
+	padding-top: 15px;
 	color: white;
 	font-size: 20px;
 	font-style: normal;
 }
 .main-body{
+	padding-bottom: 10px;
 	padding-top: 50px;
-	background-color: white;
+	background-color: #FCF8E8;
 	color: teal;
 	text-align: center;
 }

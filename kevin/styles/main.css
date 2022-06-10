@@ -1,0 +1,48 @@
+body{
+
+}
+.nav{
+	background-color: #112B3C;
+	padding-bottom: 50px;
+	width: 100%;
+	border: 100%;
+	box-shadow: inset 12px 12px 12px #ffffff;
+}
+.nav .nav-links{
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 50px;
+}
+.nav-links a{
+	padding-top: 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	padding-left: 20px;
+	color: teal;
+}
+.nav-links a:hover{
+
+}
+.nav-title{
+	display: inline-block;
+}
+.welcome-message{
+	text-align: center;
+}
+.welcome-message p{
+	color: white;
+	font-size: 20px;
+	font-style: normal;
+}
+.main-body{
+	padding-top: 50px;
+	background-color: white;
+	color: teal;
+	text-align: center;
+}
+.main-body h1{
+	color:#112B3C;
+	font-family: serif;
+
+}

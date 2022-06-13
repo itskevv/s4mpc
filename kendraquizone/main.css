@@ -1,0 +1,35 @@
+body{
+	background-color: white;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 20px;
+	margin:20px;
+}
+.nav{
+	display: flex;
+	flex-direction: column;
+	
+}
+.nav .nav-links{
+	display: flex;
+	justify-content: flex-end;
+}
+.nav-links a{
+	color: #5f9ea0;
+	font-family:"Verdana,sans-serif";
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.nav-links a:hover{
+	color: #5f9ea0;
+	text-decoration: underline;
+	font-weight: unset;
+}
+
+.welcome-message p{
+	text-align: center;
+}
+button{
+	text-align: center;
+	background-color: orange;
+	color: white;
+}
